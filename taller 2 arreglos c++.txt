@@ -1,0 +1,8 @@
+ cout << "=== EJERCICIOS PARA PRACTICAR ===\n";
+    cout << "1. Crea un programa que encuentre la mediana de un array\n";
+    cout << "2. Implementa la búsqueda binaria en un array ordenado\n";
+    cout << "3. Desarrolla un programa que calcule la transpuesta de una matriz\n";
+    cout << "4. Crea un sistema de inventario simple con arrays\n";
+    cout << "5. Implementa el algoritmo de ordenamiento por selección\n";
+    cout << "6. Desarrolla un programa que encuentre elementos duplicados\n";
+    cout << "7. Crea un juego de tres en raya usando arrays bidimensionales\n\n";
