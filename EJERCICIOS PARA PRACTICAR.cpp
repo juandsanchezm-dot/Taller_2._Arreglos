@@ -181,13 +181,15 @@ void inicializarTablero(char tablero[][SIZE]) {
 }
 
 void imprimirTablero(char tablero[][SIZE]) {
+    cout << "\n            Columna\n          1     2     3\n\n"; 
     for (int i = 0; i < SIZE; i++) {
+        cout << "Fila " << (i + 1) << "  ";
         for (int j = 0; j < SIZE; j++) {
-            cout << tablero[i][j];
-            if (j < SIZE - 1) cout << " | ";
+            cout << "  " << tablero[i][j];
+            if (j < SIZE - 1) cout << "  |";
         }
         cout << endl;
-        if (i < SIZE - 1) cout << "----------\n";
+        if (i < SIZE - 1) cout << "        -----------------\n";
     }
 }
 
@@ -224,6 +226,8 @@ void ejercicioTresEnRaya() {
     bool gameWon = false;
 
     inicializarTablero(tablero);
+    imprimirTablero(tablero);
+    cout << "\n";
 
     while (!gameWon && movimientos < SIZE * SIZE) {
         turnoJugador(tablero, jugadorActual);
@@ -255,4 +259,5 @@ int main() {
     ejercicioDuplicados();
     ejercicioTresEnRaya();
     return 0;
+
 }
